@@ -1,3 +1,3 @@
 # js-hacks
 
-This folder consists of all different  short js Projects.
+This repo consists of  different types js Projects.
