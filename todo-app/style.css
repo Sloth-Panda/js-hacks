@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,200;1,300;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+	background: linear-gradient(120deg, #2ea25296, #cec6c3);
+	width: 100vw;
+	height: 100vh;
+	color: rgb(98, 90, 90);
+}
+
+header {
+	font-size: 2rem;
+}
+
+header,
+form {
+	min-height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form input,
+form button {
+	padding: 0.75rem;
+	border: none;
+	font-size: 1.5rem;
+	background-color: #fff;
+}
+form button {
+	color: #2ea25296;
+	background-color: #fff;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+form button:hover {
+	color: #fff;
+	background-color: #2ea25296;
+}
+
+form button:focus,
+form input:focus {
+	outline: none;
+}
+
+.todo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.todo-list {
+	min-width: 45%;
+	list-style: none;
+}
+.todo {
+	background-color: #fff;
+	color: #000;
+	margin: 0.45rem;
+	font-size: 1.3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.6s ease;
+}
+.todo li {
+	flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+	color: #fff;
+	background-color: #ac142196;
+	border: none;
+	padding: 0.8rem;
+	cursor: pointer;
+	font-size: 1rem;
+}
+.complete-btn {
+	color: #fff;
+	background-color: rgb(101, 206, 101);
+}
+
+.trash-btn:focus {
+	outline: 2px solid #73091296;
+}
+.complete-btn:focus {
+	outline: 2px solid rgb(60, 132, 60);
+}
+
+.todo-item {
+	padding: 0rem 0.45rem;
+}
+
+.fa-trash,
+.fa-check {
+	pointer-events: none;
+}
+
+.completed {
+	text-decoration: line-through;
+	opacity: 0.6;
+}
+
+.fall {
+	transform: translateY(8rem) rotateZ(30deg);
+	opacity: 0;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	border: none;
+}
+
+.select {
+	margin: 1rem;
+	padding: 0.5rem;
+	font-size: 1rem;
+	position: relative;
+}
+
+select {
+	width: 10rem;
+	color: #2ea25296;
+	cursor: pointer;
+	font-weight: 900;
+	overflow: hidden;
+	padding: 1.1rem;
+}
+
+.select::after {
+	content: '\25BC';
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	background-color: #2ea25296;
+	padding: 1rem;
+	pointer-events: none; /*Pointer events none for the purpose that we can click on the whole and just not the icon area */
+}
+
+.select:hover::after {
+	background-color: #fff;
+	color: #2ea25296;
+}
