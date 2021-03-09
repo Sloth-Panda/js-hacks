@@ -1,3 +1,3 @@
 # js-hacks
 
-This repo consists of  different types js Projects.
+This repo consists of  different types of js Projects.
