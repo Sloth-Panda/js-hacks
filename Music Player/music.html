@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Music</title>
+		<link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="main">
+			<div class="music slide-fwd-center">
+                <h2 id="song">Kowfi</h2>
+                <h3 id="artist">New Found</h2>
+                <div class="img">
+                    <img src="image/img-1.jpg">
+                </div>
+                <audio src="audio/audio-2.mp3"></audio>
+                <div class="progressbar-container" id="progress-container">
+                    <div class="progress-duration-meter">
+                        <div id="current-time">0:00</div>
+                        <div id="duration">2:30</div>
+                    </div>
+                    <div class="progress-div" id="progress-div">
+                        <div class="progress" id="progress"> </div>
+                    </div>
+                </div>
+                
+                <div class="audio-controls">
+                    <i class="fa fa-backward" id="prev" title="Previous"></i>
+                    <i class="fa fa-play" id="play" title="Play"></i>
+                    <i class="fa fa-forward" id="next" title="Next"></i>
+                </div>
+            </div>
+		</div>
+        <script src="main.js"></script>
+	</body>
+</html>
